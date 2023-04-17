@@ -8,7 +8,7 @@ error NotOwner();
 
 /** @title A contraact for crowd funding
 *   @author Nurbaki Vural
-*   @notice This contract is to demo  a sample funding contract
+*   @notice This contract is to demo a sample funding contract
 */
 
 contract FundMe {
@@ -17,7 +17,7 @@ contract FundMe {
     mapping(address => uint256) public s_addressToAmountFunded;
     address[] public s_funders;
 
-    address public /* immutable */ i_owner;
+    address public immutable i_owner;
     uint256 public constant MINIMUM_USD = 50 * 10 ** 18;
 
     AggregatorV3Interface public s_priceFeed;
@@ -59,7 +59,6 @@ contract FundMe {
         (bool success, ) = i_owner.call{value: address(this).balance}("");
         require(success);
     }
-
 }
 
 

@@ -1,4 +1,5 @@
 node_modules
+.idea
 .env
 coverage
 coverage.json
@@ -9,3 +10,4 @@ typechain-types
 cache
 artifacts
 
+gas-report.txt
