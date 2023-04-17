@@ -1,7 +1,7 @@
 {
   "name": "hardhat_funde_me",
   "author": "Nurbaki Vural",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "devDependencies": {
     "@chainlink/contracts": "^0.6.1",
     "@ethersproject/abi": "^5.4.7",
